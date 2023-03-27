@@ -58,7 +58,7 @@ const Redir = ({ params: { slug } }: iProps) => {
     // such as Elo.health
     if (loaded && rData.length < 1) {
         window.location.replace('https://elo.health')
-        return (<div>No Redirect Data Found</div>)
+        return (<div></div>)
     }
 
     const [{

@@ -1,6 +1,7 @@
 import React from 'react'
 import redirectAPI from '@/lib/redirects'
 import ListRedirects from './components/listRedirects'
+import Link from 'next/link'
 
 interface iProps {
   params: {
@@ -18,7 +19,10 @@ const Home = async () => {
       <div>
         <h1>ELO Redirect App</h1>
         <p>
-          This page is only visible during development. In the future this page will simply redirect to the elo.health home page.
+          This page is only visible during development.
+        </p>
+        <p>
+          If we launch the application, the root URL will redirect to <Link href='https://elo.health'>https://elo.health</Link> 
         </p>
         <ListRedirects />        
       </div>
